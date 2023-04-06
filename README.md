@@ -1,17 +1,28 @@
-# Advanced-Programming-1 - Ex 4
-This is the manual for Ex4.
+# Multi-Threaded TCP server- KNN Algorithm
+
+A C++ implementation of a multi-threaded TCP server.  
+The server uses the KNN machine learning algorithm to allow clients classify new samples, based on input dataset.  
+Server can handle multiple clients simultaneously. 
+
 
 **to compile and run perform the following commands:**  
 Open 2 terminals (1- for server side, 2- for client side):  
 On both Terminals 1 & 2:
 1. git init  
-2. git clone https://github.com/OrrBav/Advanced-Programming-1-EX4.git
-3. cd Advanced-Programming-1-EX4 
-4. make  
-5. **On Terminal 1 (server):** recieves 2 arguments-   
+2. git clone
+3. make  
+4. **On Terminal 1 (server):** recieves 2 arguments-   
 ./server.out port  
-6. **On terminal 2 (client):** recieves 3 arguments-   
+5. **On terminal 2 (client):** recieves 3 arguments-   
 ./client.out server ip server_port
+
+
+For example:
+<p float="left">
+Client side (with the menu printed):
+<img width="370" alt="image" src="https://user-images.githubusercontent.com/112930532/215842204-d997fb52-d259-49d4-a18d-3a7c476d8724.png">
+Server side:
+<img width="200" alt="image" src="https://user-images.githubusercontent.com/112930532/215843348-131db083-7029-45cc-9043-8471ff0da799.png">
 
 **Server should be initialized before client!**
 On this exercise, we implemented a Menu for client side, that maintains communication between the two sides, still using TCP protocol. Server side will handle the calculations and the all the necessary information, and will send client information when asked, according to the menu. <br>
@@ -46,14 +57,9 @@ Server side will use Readfromfile.cpp to read the input csv file and ensure the 
 
 For convinience reasons, we added the classified csv file to the repository, so cloning it will result of cloning said files as well.
 
-for example:
-
-client side(with the menu printed):
-
-![image](https://user-images.githubusercontent.com/101596419/214344317-1945d0a1-f1b2-4927-b62b-acdfe66e6597.png)
-
-server side:
-
-![image](https://user-images.githubusercontent.com/101596419/214344241-c432867b-12b1-4446-a2d3-e0eb38b989fd.png)
+Example:  
+choose 3: <img width="349" alt="image" src="https://user-images.githubusercontent.com/112930532/215844424-ac32221d-ba37-4b37-bda2-7a3cbfd10c25.png">
+choose 4: <img width="149" alt="image" src="https://user-images.githubusercontent.com/112930532/215844286-32ac9baa-2f52-4863-9bfb-637877da58b7.png">
+choose 5: <img width="244" alt="image" src="https://user-images.githubusercontent.com/112930532/215844023-5704434a-8837-44f7-aa83-496426a12dad.png">
 
 
